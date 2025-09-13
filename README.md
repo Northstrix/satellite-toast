@@ -1,6 +1,8 @@
 # Satellite Toast
 A flexible, reusable toast notification component designed to suit diverse UX needs.
 
+Learn more at https://satellite-toast.netlify.app/
+
 ## Features
 
 - **Accent, Background & Text Color Customization**  
