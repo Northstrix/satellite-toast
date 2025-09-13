@@ -3,6 +3,8 @@ A flexible, reusable toast notification component designed to suit diverse UX ne
 
 Learn more at https://satellite-toast.netlify.app/
 
+![Satellite Toast Demo](https://raw.githubusercontent.com/Northstrix/satellite-toast/refs/heads/main/demo.gif)
+
 ## Features
 
 - **Accent, Background & Text Color Customization**  
