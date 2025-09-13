@@ -1,0 +1,65 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: 'Inter', sans-serif;
+}
+
+@layer base {
+  :root {
+    --background: 0 0% 3.9%;
+    --scrollbar-background: 0 0% 15%;
+    --foreground: 0 0% 98%;
+    --card: 0 0% 3.9%;
+    --card-foreground: 0 0% 98%;
+    --popover: 0 0% 3.9%;
+    --popover-foreground: 0 0% 98%;
+    --primary: 261 58% 68%;
+    --primary-foreground: 0 0% 10%;
+    --secondary: 0 0% 15.9%;
+    --secondary-foreground: 0 0% 98%;
+    --muted: 0 0% 15.9%;
+    --muted-foreground: 0 0% 64.9%;
+    --accent: 261 58% 68%;
+    --accent-foreground: 0 0% 98%;
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 0 0% 15.9%;
+    --input: 0 0% 15.9%;
+    --ring: 261 58% 68%;
+    --radius: 0.5rem;
+
+    --accent-color: #6750A4;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+
+  * {
+    @apply border-border;
+  }
+}
+
+/* Custom scrollbar using only your defined colors */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: hsl(var(--accent)) hsl(var(--scrollbar-background));
+}
+
+/* Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+  width: 12px;
+}
+*::-webkit-scrollbar-track {
+  background: hsl(var(--scrollbar-background));
+}
+*::-webkit-scrollbar-thumb {
+  background-color: hsl(var(--accent));
+  border-radius: 10px;
+  border: 2px solid hsl(var(--scrollbar-background));
+}
+*::-webkit-scrollbar-thumb:hover {
+  background-color: hsl(var(--primary));
+}
